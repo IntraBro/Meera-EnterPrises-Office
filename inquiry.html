@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script> 
+    <script src="inquiry.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+
+</head>
+<body>
+    <input type="text" id="date_del">
+    <button onclick="del()">Delete</button>
+    <div class="row">
+        <!-- <div class="column" style="background-color:#aaa;"id="col-name">
+            <p>Name</p>
+            <input type="text" id="name">
+            
+        </div> -->
+        <div class="column" style="background-color:#aaa;"id="col-date">
+            <p>Date</p>
+            <input type="text" id="date">
+            
+        </div>
+        <div class="column" style="background-color:#bbb;"id="col-inq">
+            <p>Inquiry No.</p>
+            <input type="text"id="inquiry">
+            
+            <!-- <p>Send Me 2 kg Glue(just for example)</p>
+            <p>Send Me 2 welding rod(just for example)</p> -->
+        </div>
+        <div class="column" style="background-color:#bbb;" id="col-comp">
+            <p>Companay</p>
+            <input type="text"id="company">
+        </div>
+        <div class="column" style="background-color:#ccc;"id="col-offer">
+            <p>Offer No.</p>
+            <input type="text"id="offer">
+        </div>
+        
+        <div class="column" style="background-color:#bbb;" id="col-value">
+            <p>Offer Value</p>
+            <input type="text" id="offer-val">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+            <button id="offer-submit" type="submit" style="border-radius: 10px; background-color: cadetblue; border-color: darkmagenta; cursor: pointer;" onclick="submit_inq()">Submit</button>
+        </div>
+</div>
+</body>
+</html>
